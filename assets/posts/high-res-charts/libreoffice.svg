@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="160mm" height="90mm" viewBox="0 0 16000 9000" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke-width="28.222" stroke-linejoin="round" xml:space="preserve">
+ <path fill="rgb(255,255,255)" stroke="none" d="M 8000,8999 L 0,8999 0,0 15999,0 15999,8999 8000,8999 Z"/>
+ <path fill="rgb(102,204,255)" stroke="none" d="M 6881,180 C 6428,180 5977,251 5546,391 5115,531 4709,738 4342,1004 3975,1271 3653,1593 3386,1960 3120,2327 2913,2733 2773,3164 2633,3595 2562,4046 2562,4499 2562,4951 2633,5402 2773,5833 2913,6264 3120,6670 3386,7037 3653,7404 3975,7726 4342,7993 4709,8259 5115,8466 5546,8606 5977,8746 6428,8818 6881,8818 7258,8818 7634,8768 7999,8670 L 6881,4499 6881,4499 6881,4499 6881,4499 6881,4499 6881,4499 6881,4499 6881,4499 6881,4499 6881,4499 6881,4499 6881,4499 6881,180 Z"/>
+ <path fill="rgb(255,255,102)" stroke="none" d="M 7999,8670 C 8071,8651 8143,8629 8215,8606 8646,8466 9052,8259 9419,7993 9786,7726 10108,7404 10375,7037 10410,6988 10444,6939 10478,6888 L 6881,4499 6881,4499 6881,4499 6881,4499 6881,4499 7999,8670 Z"/>
+ <path fill="rgb(255,204,0)" stroke="none" d="M 10478,6888 C 10522,6822 10564,6755 10604,6687 L 6881,4499 6881,4499 10478,6888 Z"/>
+ <path fill="rgb(255,153,153)" stroke="none" d="M 10604,6687 C 10762,6417 10891,6131 10988,5833 11128,5402 11200,4951 11200,4499 11200,4197 11168,3896 11105,3601 L 6881,4499 6881,4499 6881,4499 6881,4499 10604,6687 Z"/>
+ <path fill="rgb(102,255,153)" stroke="none" d="M 11105,3601 C 11074,3453 11035,3308 10988,3164 10848,2733 10641,2327 10375,1960 10108,1593 9786,1271 9419,1004 9052,738 8646,531 8215,391 7785,251 7334,180 6881,180 L 6881,4499 6881,4499 6881,4499 6881,4499 6881,4499 6881,4499 11105,3601 Z"/>
+ <path fill="rgb(102,204,255)" stroke="none" d="M 13984,3609 L 13878,3609 13878,3398 14089,3398 14089,3609 13984,3609 Z"/>
+ <path fill="rgb(255,255,102)" stroke="none" d="M 13984,4107 L 13878,4107 13878,3896 14089,3896 14089,4107 13984,4107 Z"/>
+ <path fill="rgb(255,204,0)" stroke="none" d="M 13984,4604 L 13878,4604 13878,4394 14089,4394 14089,4604 13984,4604 Z"/>
+ <path fill="rgb(255,153,153)" stroke="none" d="M 13984,5102 L 13878,5102 13878,4891 14089,4891 14089,5102 13984,5102 Z"/>
+ <path fill="rgb(102,255,153)" stroke="none" d="M 13984,5600 L 13878,5600 13878,5389 14089,5389 14089,5600 13984,5600 Z"/>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="14189" y="3623"><tspan fill="rgb(0,0,0)" stroke="none">Android</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="14189" y="4121"><tspan fill="rgb(0,0,0)" stroke="none">iOS</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="14189" y="4618"><tspan fill="rgb(0,0,0)" stroke="none">macOS</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="14189" y="5116"><tspan fill="rgb(0,0,0)" stroke="none">Windows</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="14189" y="5614"><tspan fill="rgb(0,0,0)" stroke="none">Others</tspan></tspan></tspan></text>
+</svg>
