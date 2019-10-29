@@ -5,7 +5,7 @@ highlighter:      rouge
 # Setup
 title:            PxDev
 tagline:          'Pixelmatic Dev Team'
-description:      'Pixelmatic Dev Team own very blog.'
+description:      'Pixelmatic Dev Team very own blog.'
 url:              https://pixelmatic.github.io
 baseurl:          '/'
                   # the optional subpath of your site, e.g. "/blog"
