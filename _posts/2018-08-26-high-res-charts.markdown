@@ -1,12 +1,13 @@
 ---
 layout: post
-title:  "How to make nice high res charts and graphs"
+title:  "[HOW-TO] Make Nice High-Res Charts and Graphs"
+excerpt: "Whenever you need to communicate charts and/or graphs, Google Sheets and consort only provide you with low resolution resources. Here we propose a solution to fix that."
 date:   2018-08-26 23:29:59 +0800
 categories: general charts
 ---
 Requirements:
-* LibreOffice https://www.libreoffice.org/ (It maybe works also with OpenOffice)
-* Inkscape https://inkscape.org/
+* LibreOffice [https://www.libreoffice.org/](https://www.libreoffice.org/){:target="_blank"} (It may also work with OpenOffice)
+* Inkscape [https://inkscape.org/](https://inkscape.org/){:target="_blank"}
 * A chart or a graph you want to export in high resolution
 * 5-10 minutes
 
