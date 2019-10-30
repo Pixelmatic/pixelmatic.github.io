@@ -235,7 +235,15 @@ body {
 
 #sidebar .site-title {
   color: $sidebar-title-color;
-  a { color: inherit; }
+  a { 
+  
+    color: inherit; 
+
+    &:hover, &:focus {
+      text-decoration: none;
+      box-shadow: inset 0 -6px 0 #000c50, inset 0 -9px 0 white;
+    }
+  }
 }
 #sidebar nav {
   display: flex;
