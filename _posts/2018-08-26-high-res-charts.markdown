@@ -33,20 +33,20 @@ Then you can export in PNG in high resolution so that you  make sure you don't l
 
 ![export](/assets/posts/high-res-charts/export.png)
 
-# Rasterized exports
+## Rasterized exports
 
-![awesome_pie-1](/assets/posts/high-res-charts/awesome_pie-1.png)
-<p style="text-align: center;"><small>High Resolution: 300 DPI export</small></p>
+<p style="text-align: center;"><img alt="awesome_pie-1" src="/assets/posts/high-res-charts/awesome_pie-1.png" style="margin:auto" /></p>
+<p style="text-align: center;"><small>High Resolution: 300 DPI, Weight: 102 KB</small></p>
+<hr>
+<p style="text-align: center;"><img alt="low_res_pie" src="/assets/posts/high-res-charts/low_res_pie.png" style="margin:auto"  /></p>
+<p style="text-align: center;"><small>Low Resolution: 60 DPI, Weight: 13.5 KB</small></p>
 
-![low_res_pie](/assets/posts/high-res-charts/low_res_pie.png)
-<p style="text-align: center;"><small>Low Resolution: 60 DPI export</small></p>
+## Vector exports
 
-# Vector exports
+And after all if your communication support allows SVG files (unlike Google Presentation), we recommend you to just save a copy as *Plain SVG* and display the SVG directly. FYI every modern browser support SVG ([https://caniuse.com/#feat=svg](https://caniuse.com/#feat=svg)). 
 
-And after all if your communication support allows SVG files, I would advice you to just save a copy as *Plain SVG* and display the SVG directly. Like every modern browser supports SVG. 
-
-![plain_svg-1](/assets/posts/high-res-charts/plain_svg-1.svg)
-<p style="text-align: center;"><small>Plain SVG edited in Inkscape</small></p>
-
-![libreoffice](/assets/posts/high-res-charts/libreoffice.svg)
-<p style="text-align: center;"><small>Plain SVG from LibreOffice</small></p>
+<p style="text-align: center;"><img alt="plain_svg-1" src="/assets/posts/high-res-charts/plain_svg-1.svg" style="margin:auto"  /></p>
+<p style="text-align: center;"><small>Plain SVG edited in Inkscape, Weight: 30.4 KB</small></p>
+<hr>
+<p style="text-align: center;"><img alt="libreoffice" src="/assets/posts/high-res-charts/libreoffice.svg" style="margin:auto"  /></p>
+<p style="text-align: center;"><small>Plain SVG from LibreOffice, Weight: 3.64 KB</small></p>
