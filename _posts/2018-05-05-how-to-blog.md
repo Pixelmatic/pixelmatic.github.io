@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "[HOW-TO] Create a Blog"
-excerpt: "If you want to host your own blog, this article will show you, how to deploy a blog in 5 to 10 minutes."
-date:   2018-05-05 23:29:59 +0800
-categories: devops blog docker
+title:  "Set up a blog with Ghost"
+excerpt: "If you want to host your own blog, this article will show you, how to deploy a blog with Ghost in 5 to 10 minutes."
+categories: Tutorials
 author: Sonny Alves Dias
+tags: [ tutorials, devops, blog, docker, ghost ]
 ---
 Requirements: 
 * [Docker](https://www.docker.com/){:target="_blank"}

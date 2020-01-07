@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "[HOW-TO] Setup a Wiki"
+title:  "Set up a Wiki with Mediawiki"
 excerpt: "If you want to host your own wiki, this article will show you, how to deploy a wiki in 5 to 10 minutes"
-date:   2018-05-03 23:59:59 +0800
-categories: devops wiki docker
+categories: Tutorials
 author: Sonny Alves Dias
+tags: [ tutorials, devops, wiki, docker ]
 ---
 Requirements: 
 * [Docker](https://www.docker.com/){:target="_blank"} 
