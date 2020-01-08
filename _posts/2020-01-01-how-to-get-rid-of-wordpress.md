@@ -25,13 +25,13 @@ Though every developer that encountered WordPress knows its many drawbacks.
 
 ## The problem with WordPress
 
-His popularity is also one of his weaknesses because being friendly to non-technical people, generated a huge amount of non-official learning resources that are either outdated or of poor quality, a lot of security holes because these users may not apply security patches to their WordPress regularly, also attracted a lot of beginner developers or malicious/scammy developers to make their own poor quality or scammy plugins that create definitely risks. 
+His popularity is also one of his weaknesses because being friendly to non-technical people, generated a huge amount of non-official learning resources that are either outdated or of poor quality, a lot of security holes because these users may not apply security patches to their WordPress regularly, and also attracted a lot of beginner developers or malicious/scammy developers to make their own plugins diluting, even more, the plugins market. 
 
-On a more technical aspect, WordPress is too flexible in the sense that to implement something it can be done on different layers: in the PHP source code, in the WordPress dashboard, in the Theme configuration, making somehow to many different types of input to handle (even more difficult for a non-technical person). 
+On a technical side, WordPress is too flexible in the sense that to implement something it can be done on different layers: in the PHP source code, in the WordPress dashboard, in the Theme configuration, making non-technical person not adopting conventions it allows them to try out different tricks here and there thus complexifying their website to the most. 
 
-It is also unreliable because of how updates are conducted, plugins and themes are simply overwritten when updating losing any local changes.
-For that on the theme side, WordPress has a child theme system which is a first step to but not enough in the long run. 
-The result is that is becomes risky to update plugins, themes, and WordPress because afraid of losing your changes. Hence WordPress websites are never updated de facto.
+WordPress is also unreliable because of how updates are conducted, plugins and themes are simply overwritten when updating losing any local changes (made with the tricks applied here and there).
+To be honest on the theme side, WordPress has a child theme system which allows to define changes that will be applied on top of a parent but first, it has never been well-integrated and neither well-promoted in their systems and second for a theme that is still actively being developed it will probably not be enough in the long run. 
+The result is that for webmasters and website owners it becomes risky to update plugins, themes, and WordPress because they are afraid of losing their changes. Hence WordPress websites are never updated de facto.
 
 ## How to get rid of WordPress?
 
@@ -59,11 +59,11 @@ $ curl -X GET http://yoursite.com/wp-json/wp/v2/posts/
 		"date_gmt": "2019-07-18T01:00:21",
 		"modified": "2019-07-18T03:23:13",
 		"modified_gmt": "2019-07-18T03:23:13",
-		"slug": "magical-crypto-store-is-now-open",
+		"slug": "sluggish-slug",
 		"status": "publish",
 		"type": "post",
 		"title": {
-			"rendered": "Magical Crypto Store is Now Open!"
+			"rendered": "The website is open!"
 		},
 		"content": {
 			"rendered": "content",
@@ -130,7 +130,7 @@ $ curl -X GET http://yoursite.com/wp-json/wp/v2/media/335
 		"media_details": {
 			"width": 1919,
 			"height": 1078,
-			"file": "2019/05/thumbnail-MmfmyDygxdc-7.jpg",
+			"file": "2019/05/thumbnail-MmfhyDygxdc-7.jpg",
 			"sizes": {
 			"thumbnail": {
 				"file": "thumbnail-MmfmyDygxdc-7-150x150.jpg",
@@ -206,9 +206,9 @@ If you are a web developer, you are probably using one of these modern JS framew
 What is different with these from tech like PHP or Ruby on Rails, it is that the back-end and server logic is decoupled from them. 
 Hence using these frameworks we generally go for an architecture of a decoupled front-end that consumes web services. Note that this also allows front-ends to work offline. 
 
-### How to combine both?
+### Let's combine both!
 
-Use your favorite HTTP Client to simply consume the WordPress and WooCommerce API
+Simply now use your favorite HTTP Client to simply consume the WordPress and WooCommerce API
 
 We suggest,
 - For React and Vue to use: [https://github.com/axios/axios](https://github.com/axios/axios){:target="_blank"}
@@ -220,23 +220,38 @@ To keep our WordPress away from curious eyes, we decided to hide its usage from 
 
 Below is the architecture we went with:
 
-![Muted Wordpress](/assets/posts/muted-wordpress/muted_wordpress_architecture.png)
+![Muted Wordpress](/assets/posts/muted-wordpress/architecture_wordpress_muted.svg)
 
 - Front-end running on Angular and Typescript
 - Middleware running on Node.js and Typescript
 - Back-end running on WordPress
-- CDN running on CloudFront + WordPress plugin [WP Offload Media Lite](https://wordpress.org/plugins/amazon-s3-and-cloudfront/){:target="_blank"}
+- CDN and storage are respectively running on AWS CloudFront and AWS S3.
+
+Note that to automate the upload of the media to S3 in WordPress we installed the plugin [WP Offload Media Lite](https://wordpress.org/plugins/amazon-s3-and-cloudfront/){:target="_blank"}.
+
+Making the total count of our plugins installed into WordPress to only 2: _WooCommerce_ and _WP Offload Media Lite_ that we feel safe to update at any time.
+
+Thus simply turning WordPress into a backend system, when we want:
+
+- To post an article, we simply add a post in WordPress,
+- To host a picture, we simply upload it into WordPress media, and retrieve the CDN link,
+- To do some changes in some parts of our website, we edit a WordPress page that is used to load content on our website,
+- To add a product, we simply add it into WooCommerce,
+- ...
 
 ## Difficulties Encountered
 
-- Keep WordPress hidden, fixed by the middleware and CDN [Fixed by the middleware]
-- WordPress API is slow: 
+- The WordPress API is actually slow: 
 [https://stackoverflow.com/questions/45421976/wordpress-rest-api-slow-response-time/45425091#45425091](https://stackoverflow.com/questions/45421976/wordpress-rest-api-slow-response-time/45425091#45425091){:target="_blank"}
-[https://wordpress.org/plugins/wp-rest-api-cache/](https://wordpress.org/plugins/wp-rest-api-cache/){:target="_blank"}
+Though a plugin seems to help for that, by caching answers from the API:
+[https://wordpress.org/plugins/wp-rest-cache/](https://wordpress.org/plugins/wp-rest-cache/){:target="_blank"} (We haven't tested it yet).
+
 - Under special circumstances, you may want to register custom endpoint 
 [https://developer.wordpress.org/rest-api/extending-the-rest-api/adding-custom-endpoints/](https://developer.wordpress.org/rest-api/extending-the-rest-api/adding-custom-endpoints/){:target="_blank"}
+
+- To keep WordPress fully hidden behind our middleware, we had to filter all the links returned by WordPress to make sure they either use the CDN, use a vetted domain, or simply don't appear in the API calls answers. For that, the plugin _WP Offload Media Lite_ helps a lot for the media, but for example with internal links to products or posts, we apply filters on the JSON answers from WordPress in our middleware.
 
 
 ## Final Thoughts
 
-For us at Pixelmatic, to be able to fully customize the front-end as we want, while also keeping our website more secure is definitely a big win for us. Admittedly the infrastructure needs are bigger but the maintainability and stability in the long term are higher. 
+For us at Pixelmatic, to be able to fully customize the front-end as we want, while also keeping our website more secure is a major win for us. Admittedly the infrastructure needs are bigger but the maintainability and stability in the long term are higher. 
