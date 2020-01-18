@@ -25,7 +25,7 @@ Certbot can generate certificates recognized by all modern browsers. It generate
 Here is an example of how to use Certbot if you are using Nginx om Ubuntu 16.04. 
 
 First of all, once Nginx is installed, your server may have a similar definition.
-```
+```nginx
 server {
     server_name yourdomain.com;
     listen 80;
@@ -39,18 +39,18 @@ server {
 
 Then just follow the instructions from the Certbot website:
 
-```
-$ sudo apt-get update
-$ sudo apt-get install software-properties-common
-$ sudo add-apt-repository universe
-$ sudo add-apt-repository ppa:certbot/certbot
-$ sudo apt-get update
-$ sudo apt-get install certbot python-certbot-nginx 
+```shell
+sudo apt-get update
+sudo apt-get install software-properties-common
+sudo add-apt-repository universe
+sudo add-apt-repository ppa:certbot/certbot
+sudo apt-get update
+sudo apt-get install certbot python-certbot-nginx 
 ```
 
 Finally, just run: 
 
-```
+```shell
 sudo certbot --nginx
 ```
 
@@ -60,7 +60,7 @@ Et voila, your website is protected for the next 3 months.
 
 One last thing, if you want to have an automatic renewal of this certificate you can schedule a cronjob. Add these lines to your list as a superuser (`sudo crontab -e`).
 
-```
+```shell
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/opt/aws/bin:/root/bin
 0 16 * * * certbot renew
 0 4  * * * certbot renew
