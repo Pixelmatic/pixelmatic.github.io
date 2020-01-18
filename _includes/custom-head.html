@@ -1,16 +1,28 @@
 <!-- Additional head bits without overriding original head -->
-<meta name="description" content="{{ site.meta_description }}" />
+{% if post.excerpt %}
+    <meta property="description" content="{{ post.excerpt }}" />
+{% else %}
+    <meta property="description" content="{{ site.meta_description }}" />
+{% endif %}
 <meta name="keywords" content="pixelmatic, game dev, dev, development, dev ops" />
 
 <meta property="og:type" content="article" />
 <meta property="og:title" content="{{ page.title }}" />
-<meta property="og:description" content="{{ site.meta_description }}" />
+{% if post.excerpt %}
+    <meta property="og:description" content="{{ post.excerpt }}" />
+{% else %}
+    <meta property="og:description" content="{{ site.meta_description }}" />
+{% endif %}
 <meta property="og:image" content="https://pixelmatic.github.io/favicon.png" />
-<meta property="og:url" content="https://pixelmatic.github.io" />
+<meta property="og:url" content="{{ page.url }}" />
 <meta property="og:site_name" content="{{ site.title }}" />
 
 <meta name="twitter:title" content="{{ page.title }}">
-<meta name="twitter:description" content="{{ site.meta_description }}">
+{% if post.excerpt %}
+    <meta property="twitter:description" content="{{ post.excerpt }}" />
+{% else %}
+    <meta name="twitter:description" content="{{ site.meta_description }}">
+{% endif %}
 <meta name="twitter:image" content="https://pixelmatic.github.io/favicon.png">
 <meta name="twitter:site" content="@Pixelmatic">
 <meta name="twitter:creator" content="@Pixelmatic">
