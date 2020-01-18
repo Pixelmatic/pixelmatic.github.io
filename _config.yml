@@ -6,6 +6,7 @@ highlighter:      rouge
 title:            PxDev
 tagline:          'Pixelmatic Dev Team'
 description:      'Pixelmatic Dev Team very own blog.'
+meta_description: 'This is the Pixelmatic Development team blog, we share articles and tutorials to the development community.'
 url:              https://pixelmatic.github.io
 baseurl:          '/'
                   # the optional subpath of your site, e.g. "/blog"
@@ -35,3 +36,5 @@ sidebar_tags_link:  '/tags.html'
                                 # page. If you change your paginate_path,
                                 # set this to the root of the paginate_path
                                 # to enable a separate blog link.
+
+google_analytics: 'UA-101995992-4'
