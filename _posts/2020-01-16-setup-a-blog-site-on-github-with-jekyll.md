@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Set up a blog on GitHub Pages with Jekyll"
-excerpt: "It's never too late to make yourself a personal blog site, as long as you would like to spend sometime on some writings for someone else to take a look when they are searching about the things you are sharing. I am saying this to myself when I decided to setup this site and write this blog as the first post on my site."
+excerpt: "It's never too late to make yourself a personal blog site, as long as you would like to spend sometime on some writings for someone else to take a look when they are searching about the things you are sharing."
 author: Stefan Liu
 categories: Tutorials
 tags: [ tutorials, jekyll, blog ]
@@ -9,7 +9,7 @@ tags: [ tutorials, jekyll, blog ]
 
 *Original article from [https://blog.devfans.io](https://blog.devfans.io/setup-a-blog-site-on-github-with-jekyll/){:target="_blank"}*
 
-It’s never too late to make yourself a personal blog site, as long as you would like to spend some time to write for someone else to take a look when they are searching about the things you are sharing. I am saying this to myself when I decided to set up this site and write this blog as the first post on the site [https://blog.devfans.io](https://blog.devfans.io){:target="_blank"}.
+It’s never too late to make yourself a personal blog site, as long as you would like to spend some time to write for someone else to take a look when they are searching about the things you are sharing. I am saying this to myself when I decided to set up my website and write this blog as the first post [https://blog.devfans.io](https://blog.devfans.io){:target="_blank"}.
 
 #### Resources we would use
 
