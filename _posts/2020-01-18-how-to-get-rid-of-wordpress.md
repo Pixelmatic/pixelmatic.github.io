@@ -1,8 +1,7 @@
 ---
 layout: post
 title:  "Build an online store without dealing with WordPress unreliability"
-excerpt: "The couple WordPress and WooCommerce has been for a long time the favorite solution for people to deploy quickly an online shop and start making revenue. 
-Though every developer that encountered WordPress knows its many drawbacks."
+excerpt: "The couple WordPress and WooCommerce have been for too long the favorite solution to deploy quickly an online shop and start making revenue. Now every developer who encountered WordPress knows its many drawbacks. In this article, we will explain how we overcame WordPress's unreliability by turning it basically into a backend service. "
 categories: Articles
 author: Lawrence Zhao, Sonny Alves Dias
 tags: [ articles, wordpress, woocommerce, devops, web ]
