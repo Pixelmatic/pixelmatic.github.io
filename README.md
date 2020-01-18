@@ -1,3 +1,3 @@
 Pixelmatic Dev Team very own blog.
 
-(Link)[pixelmatic.github.io]
+[Link](https://pixelmatic.github.io)
