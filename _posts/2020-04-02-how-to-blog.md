@@ -27,5 +27,5 @@ chmod +x start.sh
 
 You can visit yourdomain.com and see your blog in action. 
 
-*Note*: For those who want to use https (and I would strongly recommend you do), I will treat the subject on how to get an SSL certificate for free in a future article. 
+*Note*: For those who want to use https (and I would strongly recommend you do), the subject is treated in the following article [How to have HTTPS on my website for free]({% post_url 2020-01-17-how-to-have-https %}). 
 
