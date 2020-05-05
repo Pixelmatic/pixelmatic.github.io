@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Write Readable Code in OOP"
+title:  "Write readable code in OOP"
 excerpt: "In this article, John shares to you his thoughts and the different approaches to write readable code that can outlive the time."
 categories: Articles
 author: John Yu

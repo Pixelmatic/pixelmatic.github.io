@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "A Password Generator to Save Your Life"
+title:  "A password generator to save your life"
 excerpt: "Living in modern society, most of the users of online services have to bear the pain to remember the access to plenty of platforms including websites, services, apps, bank account, email, etc. The login credentials cannot be too simple for security reasons, or too complex to remember it clearly. I believe everyone could lose some of the credentials or cannot recall it clearly."
 author: Stefan Liu
 categories: Tools

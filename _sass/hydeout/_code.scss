@@ -30,7 +30,7 @@ pre code {
 
 // Pygments/Rouge via Jekyll
 .highlight {
-  padding: 1rem;
+  padding: 0 1rem;
   margin-bottom: 1rem;
   font-size: .8rem;
   line-height: 1.4;
@@ -38,6 +38,7 @@ pre code {
   border-radius: .25rem;
 
   pre {
+    padding: 0;
     margin-bottom: 0;
     overflow-x: auto;
   }

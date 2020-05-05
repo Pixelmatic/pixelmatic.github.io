@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Make Nice High-Res Charts and Graphs"
+title:  "Make nice high-res charts and graphs"
 excerpt: "Whenever you need to communicate charts and/or graphs, Google Sheets and consort only provide you with low resolution resources. Here we propose a solution to fix that."
 categories: Tutorials
 author: Sonny Alves Dias
