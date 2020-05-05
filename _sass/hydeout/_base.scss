@@ -47,6 +47,11 @@ a {
   }
 }
 
+a[target=_blank]:after {
+  content: url('/assets/svg/external-link.svg');
+  margin-left: 5px;
+}
+
 img {
   display: block;
   max-width: 100%;
