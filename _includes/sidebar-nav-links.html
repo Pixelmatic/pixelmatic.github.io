@@ -1,14 +1,17 @@
 <nav id="sidebar-nav-links">
   {% if site.sidebar_home_link %}
     <a class="home-link {% if page.url == '/' %} active{% endif %}"
+        title="Home"
         href="{{ "/" | relative_url }}">Home</a>
   {% endif %}
   {% if site.sidebar_blog_link %}
     <a class="page-link {% if page.url == site.sidebar_blog_link %} active{% endif %}"
+       title="Blog"
 	href="{{ site.sidebar_blog_link | relative_url }}">Blog</a>
   {% endif %}
   {% if site.sidebar_tags_link %}
     <a class="page-link {% if page.url == site.sidebar_tags_link %} active{% endif %}"
+       title="Tags"
 	href="{{ site.sidebar_tags_link | relative_url }}">Tags</a>
   {% endif %}  
 
